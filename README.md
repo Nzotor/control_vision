@@ -20,7 +20,7 @@ Le code embarqué est conçu pour tourner sur une machine cible (ex: Raspberry P
 
 ```bash
 # Cloner le dépôt
-git clone [[control_vision]](https://github.com/Nzotor/control_vision)
+git clone https://github.com/Nzotor/control_vision
 cd control_vision
 
 # Installer les dépendances
