@@ -20,8 +20,8 @@ Le code embarqué est conçu pour tourner sur une machine cible (ex: Raspberry P
 
 ```bash
 # Cloner le dépôt
-git clone [URL_DE_TON_REPO]
-cd Vision_BlueROV_Project
+git clone [control_vision](https://github.com/Nzotor/control_vision)
+cd control_vision
 
 # Installer les dépendances
 pip install ultralytics opencv-python matplotlib
