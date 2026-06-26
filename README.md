@@ -11,6 +11,7 @@ Le projet explore et compare deux approches d'inférence, entraînées sur des j
 ## 📂 Contenu du Dépôt
 
 * `/notebooks/` : Les scripts Google Colab utilisés pour l'entraînement des modèles sur le dataset.
+* `/test/test_minimal.py` : Script de "Sanity Check" pour valider rapidement l'environnement et le chargement des poids sur une image fixe.
 * `/scripts/benchmark_rov.py` : Outil de test comparant les FPS et la latence des deux architectures sous différents formats d'export (PyTorch, ONNX, NCNN).
 * `/scripts/integration_rov.py` : La boucle principale de contrôle. Intègre une Machine à États (Standby/Listening) déclenchée par des gestes clés (`start_comm`, `end_comm`) et un filtre pour éliminer les faux positifs.
 
@@ -25,3 +26,24 @@ cd control_vision
 
 # Installer les dépendances
 pip install ultralytics opencv-python matplotlib
+```
+
+## ⚙️ Utilisation
+
+Etape 1 : Test Rapide (Sanity Check)
+
+```bash
+python scripts/test_minimal.py
+```
+
+Etape 2 : lancer le système de controle
+
+```bash
+python scripts/integration_rov.py
+```
+
+Contrôles clavier (Debug) pendant l'exécution :
+
+* Touche s : Forcer le passage en mode "Listening" (Écoute).
+* Touche e : Forcer le retour en mode "Standby" et afficher le résumé.
+* Touche q : Quitter le programme proprement.
