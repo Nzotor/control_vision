@@ -42,7 +42,7 @@ Etape 2 : lancer le système de controle
 python scripts/integration_rov.py
 ```
 
-Contrôles clavier (Debug) pendant l'exécution :
+**Contrôles clavier (Debug) pendant l'exécution :**
 
 * Touche s : Forcer le passage en mode "Listening" (Écoute).
 * Touche e : Forcer le retour en mode "Standby" et afficher le résumé.
